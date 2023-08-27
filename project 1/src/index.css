@@ -14,7 +14,8 @@ body{
 .hero-container{
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
+  flex:1 1 50%;
 }
 nav{
   display: flex;
@@ -54,14 +55,14 @@ button:hover{
 .hero{
   display: flex;
   align-items: center;
-  max-width: 1280px;
-  height: calc(100vh - (72px + 160px));
+  max-width: 1125px;
   margin: 80px auto;
 }
 .hero h1{
-  font-size: 108px;
+  font-size: 90px;
   font-weight: 800;
   line-height: 102px;
+  max-width: 500px;
 }
 .hero p{
   color: var(--gray);
