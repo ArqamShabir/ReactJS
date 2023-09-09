@@ -23,8 +23,8 @@ function App() {
           setFilterData(json);
           setloading(false);
         } catch (error) {
-          setError("There is a error fetching the data");
-        }  
+          setError("There is a error fetching the data and the error is " + error);
+        } 
     };
     fetchFoodData();
     }, []);
@@ -99,7 +99,7 @@ function App() {
           <input onChange={(event) => (filter(selectedBtn,event))} type='text' placeholder='Search Here...' />
         </div>
       </TopContainer>
-
+      
       <FilterContainer>
         {btndata.map((value) => (
           <Button isSelected={value.type === selectedBtn} key={value.type} onClick={() => filterBtn(value.type)}>{value.name}</Button>
