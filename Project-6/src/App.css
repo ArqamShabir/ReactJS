@@ -1,0 +1,16 @@
+/* styles.css or your preferred CSS file */
+.hide-scrollbar {
+    /* Hide the default scrollbars */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  
+    /* Hide the scrollbar thumb (for WebKit browsers) */
+    &::-webkit-scrollbar {
+      width: 0.5rem; /* Adjust the width as needed */
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Hide the thumb */
+    }
+  }
+  
